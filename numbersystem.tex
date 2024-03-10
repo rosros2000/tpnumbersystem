@@ -16,8 +16,9 @@
 \usepackage{hyperref} 
 \usepackage{fix-cm} 
 \usepackage{xcolor}
+\usepackage{setspace}
 %\usepackage[italian]{babel}
-\usepackage[left=1.0in,top=0.2in,bottom=0.6in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
+\usepackage[left=1.0in,top=0in,bottom=0.6in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
 
 %\newfontface\tpf{linjapona49}
 
@@ -34,17 +35,19 @@
 
 \newcommand\HHUGE{\@setfontsize\Huge{50}{60}} \makeatother 
 
-\title{Power-based number system for toki pona \\{\HHUGE{\tpf{ nasin nanpa sewi1 pi toki-pona}}} \\ V 0.13alpha}
-\author{jan loje, jan Tamalu} 
+\title{Power-based number system for toki pona \\{\HHUGE{\tpf{ nasin nanpa sewi1 pi toki-pona}}} \\ V 0.14 $\alpha$}
+\author{\textit{jan loje, jan Tamalu}} 
 
 \begin{document} 
 	
 	
 \maketitle
-	
+
+\setstretch{1.2}	
+
 \section{Toki pona power-based number system}
 	
-\emph{with the help of jan Tamalu}
+\emph{With the help of jan Tamalu}
 \emph{(mistakes are mine only)}
 
 This system should be:
@@ -111,34 +114,47 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 
 \vspace{5pt}	
 
-	*NOTE: compare Philipino ika- or pang-, Malay or Indonesian ke-
+	*NOTE: compare Philipino ika- or pang-, Malay and Indonesian ke-
 
 \newpage
 
-\textcolor{white}{easily}
+\newgeometry{left=1.0in,top=1in,bottom=0.6in}
+
 
 \section{Use}
 	
 \subsection{Prefixes (when needed)}
 
-    Ordinal and cardinal numbers
+    \textbf{Ordinal and cardinal numbers}.
 	
-	nanpa {\tpf{nanpa}}:  ordinal number
+	\textit{nanpa} {\tpf{nanpa}}:  ordinal number
 	
-	mute {\tpf{mute}}: cardinal number
+	\textit{mute} {\tpf{mute}}: cardinal number
 	
-	\hypertarget{non-additive-numbers}{%
-		\subsection{Non-additive numbers}\label{non-additive-numbers}}
+	\vspace{5 pt}
 	
-	Numbers are \emph{non-additive}
+	Ex. 1:
+	
+	\textit{ona li nanpa luka} = it's the 5th (ordinal)
+	
+	\textit{ona li mute luka} = it's 5 (cardinal) 
+	
+	
+\subsection{Non-additive numbers}
+	
+	\textbf{Numbers are \emph{non-additive}}.
+	
+	\vspace{5 pt}
 	
 	120 = \emph{wan tu ala}
 	
 	2024 = \emph{tu ala tu lipu}
 	
-    \subsection{Numbers as powers of 10}
+\subsection{Numbers as powers of 10}
     
-    sewi is the base 10 for all powers
+   \textbf{ \textit{sewi} is the base 10 for all powers.}
+    
+    \vspace{5 pt}
 	
 	1000 = 10\textsuperscript{3}= \emph{sewi sin}
 	
@@ -150,29 +166,27 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 \vspace {12 pt}
 	
-	Ex. 1: \emph{jan li jo \$1,000,000,000}
+	Ex. 2: \emph{jan li jo e \$1,000,000,000}
 	
 	\emph{jan li jo e mani Mewika pi mute sewi suli}
 	
 \subsection{Very large (or small) numbers}
 
-    Very large (or small) numbers can be expressed easily.
+   \textbf{ Very large (or small) numbers can be expressed easily.}
     
     \vspace {6 pt}
 	
-	a googol = 10\textsuperscript{100}
+	a googol = 10\textsuperscript{100} = sewi wan ala ala 
 	
-    \vspace {6 pt}
-	
-	10\textsuperscript{100} = sewi wan ala ala
-	
-	or
+	or 
 	
 	10\textsuperscript{10\textsuperscript{2}} = sewi sewi tu
 	
 	\subsection{Composed numbers}
 	
-	Numbers with multiplicative and additive values
+	\textbf{Numbers with multiplicative and additive values.}
+	
+	\vspace {6 pt}
 	
 	The number to the left of \emph{sewi} has multiplicative value.
 	
@@ -185,13 +199,15 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 	\subsection{Numbers with fractional parts}
 	
-	Number with a fractional part separated by a decimal point
+	\textbf{Number with a fractional part separated by a decimal point.}
 	
 	3.14 = \emph{sin sike wan lipu}
 	
 	3.14 = 314 × 10\textsuperscript{-2} = \emph{sin wan lipu sewi weka tu}
 	
 	\subsection{Numbers with negative exponents}
+	
+	\textbf{Negative exponents are prefixed by \textit{weka}.}
 	
 	6.62 × 10\textsuperscript{-34} = \emph{pipi sike pipi tu sewi weka sin
 		lipu}
@@ -208,6 +224,6 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 	\emph{tenpo mun luka en tenpo suno wan tu la ona li kama lon}
 
-	\tpf{tenpo mun luka en tenpo suno wan tu la ona li kama lon}
+	\huge{\tpf{tenpo mun luka en tenpo suno wan tu la ona li kama lon}}
 	
 \end{document} 
