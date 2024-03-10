@@ -1,0 +1,212 @@
+% !TeX encoding = UTF-8
+% !TeX TS-program = xelatex
+% !TeX root = numbersystem.tex
+% 20240310 Sunday
+% A chart of all the glyphs in Toki Pona, arranged by shape.
+% Process this with 'lualatex'.
+% aquatiki fork - expanded
+
+\documentclass{article} 
+\usepackage{textcomp}
+\usepackage{graphicx} 
+\usepackage{fontspec} 
+\usepackage{multicol} 
+\usepackage{hanging} 
+\usepackage{titlesec} 
+\usepackage{hyperref} 
+\usepackage{fix-cm} 
+\usepackage{xcolor}
+%\usepackage[italian]{babel}
+\usepackage[left=1.0in,top=0.2in,bottom=0.6in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
+
+%\newfontface\tpf{linjapona49}
+
+\newfontface\tpf{linja sike 5} 
+
+\newcommand*\tpGlyph[2]{ 
+	\begin{tabular}{c}\huge{\tpf #1} \\ \small #2 
+		\vspace{2mm}
+\end{tabular}} 
+
+\renewcommand{\arraystretch}{1.2}
+
+\makeatletter
+
+\newcommand\HHUGE{\@setfontsize\Huge{50}{60}} \makeatother 
+
+\title{Power-based number system for toki pona \\{\HHUGE{\tpf{ nasin nanpa sewi1 pi toki-pona}}} \\ V 0.13alpha}
+\author{jan loje, jan Tamalu} 
+
+\begin{document} 
+	
+	
+\maketitle
+	
+\subsection{Toki pona power-based number system}
+	
+\emph{with the help of jan Tamalu}
+\emph{(mistakes are mine only)}
+
+This system should be:
+
+1. based on the common decimal system and digits,
+
+2. unambiguous,
+
+3. easy to understand, learn, and use for all common non-scientific and non-mathematical purposes,
+
+4. suitable for \textit{toki pona}.
+
+\subsection{Vocabulary}
+	
+The ideas for the choice of the names are indicated between square 	brackets {[} {]}
+
+\vspace{10pt}
+	
+	\begin{tabular}{|c|c|c|l|} 
+		\hline
+		1 & wan & \tpf{wan} & one\tabularnewline
+		\hline
+		2 & tu & \tpf{tu} & two\tabularnewline
+		\hline
+		3 & sin & \tpf{sin} & three {[}3 lines{]}\tabularnewline
+		\hline
+		4 & lipu & \tpf{lipu} & four {[}4 sides{]}\tabularnewline
+		\hline
+		5 & luka & \tpf{luka} & five\tabularnewline
+		\hline
+		6 & pipi & \tpf{pipi} & six {[}6 elements{]}\tabularnewline
+		\hline
+		7 & len & \tpf{len} & seven {[}4 sides + 3 lines{]}\tabularnewline
+		\hline
+		8 & musi & \tpf{musi} & eight; two circles look a kind of
+		8\tabularnewline
+		\hline
+		9 & suli & \tpf{suli} & nine {[}the "big" digit{]}\tabularnewline
+		\hline
+		10 & sewi & \tpf{sewi1} & 10 (base) followed by integer powers (1 is
+		implicit): 2, 3, 4,... {[}raise{]}\tabularnewline
+		\hline
+		20 & tu sewi & \tpf{tu sewi1} & two × ten\tabularnewline
+		\hline
+		30 & sin sewi & \tpf{sin sewi1} & three × ten\tabularnewline
+		\hline
+		100 & sewi tu & \tpf{sewi1 tu} & 10\textsuperscript{2}\tabularnewline
+		\hline
+		300 & sin sewi tu & \tpf{sin sewi1 tu} & three × ten\textsuperscript{2}\tabularnewline
+		\hline
+		1000 & sewi sin & \tpf{sewi1 sin} & 10\textsuperscript{3}\tabularnewline
+		\hline
+		+ & en & \tpf{en} & addition\tabularnewline
+		\hline
+		- & weka & \tpf{weka} & negative {[}subtract{]}\tabularnewline
+		\hline
+		. & sike & \tpf{sike} & separator for decimal part\tabularnewline
+		\hline
+		№ & nanpa & \tpf{nanpa} & number prefix (ordinal)*\tabularnewline
+		\hline
+		\# & mute & \tpf{mute} & number prefix (cardinal)\tabularnewline
+		\hline
+	\end{tabular}
+
+\vspace{5pt}	
+
+	*NOTE: compare Philipino ika- or pang-, Malay or Indonesian ke-
+
+\newpage
+
+\textcolor{white}{easily}
+
+	
+\subsubsection{Prefixes (when needed)}
+
+    Ordinal and cardinal numbers
+	
+	nanpa {\tpf{nanpa}}:  ordinal number
+	
+	mute {\tpf{mute}}: cardinal number
+	
+	\hypertarget{non-additive-numbers}{%
+		\subsubsection{Non-additive numbers}\label{non-additive-numbers}}
+	
+	Numbers are \emph{non-additive}
+	
+	120 = \emph{wan tu ala}
+	
+	2024 = \emph{tu ala tu lipu}
+	
+    \subsubsection{Numbers as powers of 10}
+    
+    sewi is the base 10 for all powers
+	
+	1000 = 10\textsuperscript{3}= \emph{sewi sin}
+	
+	10 000 = 10\textsuperscript{4}= \emph{sewi lipu}
+	
+	...
+	
+	1 000 000 000 = 10\textsuperscript{9}= \emph{sewi suli}
+	
+\vspace {12 pt}
+	
+	Ex. 1: \emph{jan li jo \$1,000,000,000}
+	
+	\emph{jan li jo e mani Mewika pi mute sewi suli}
+	
+\subsubsection{Very large (or small) numbers}
+
+    Very large (or small) numbers can be expressed easily.
+    
+    \vspace {6 pt}
+	
+	a googol = 10\textsuperscript{100}
+	
+    \vspace {6 pt}
+	
+	10\textsuperscript{100} = sewi wan ala ala
+	
+	or
+	
+	10\textsuperscript{10\textsuperscript{2}} = sewi sewi tu
+	
+	\subsubsection{Composed numbers}
+	
+	Numbers with multiplicative and additive values
+	
+	The number to the left of \emph{sewi} has multiplicative value.
+	
+	The additive value of a number (sequence) is stated explicitly with
+	\emph{en}.
+   \vspace {6 pt}
+   	
+	4 000 000 012 = 4 × 10\textsuperscript{9}+ 12 = \emph{lipu sewi suli en
+		wan tu}
+	
+	\subsubsection{Numbers with fractional parts}
+	
+	Number with a fractional part separated by a decimal point
+	
+	3.14 = \emph{sin sike wan lipu}
+	
+	3.14 = 314 × 10\textsuperscript{-2} = \emph{sin wan lipu sewi weka tu}
+	
+	\subsubsection{Numbers with negative exponents}
+	
+	6.62 × 10\textsuperscript{-34} = \emph{pipi sike pipi tu sewi weka sin
+		lipu}
+	
+	\subsubsection{Dates}
+	
+	\textbf{ISO 8601 system}
+	
+	
+	2024-05-12 = \emph{tenpo sike tu ala tu lipu en tenpo mun luka en tenpo
+		suno wan tu}
+	
+	Ex. 2: \emph{05-12 ona li kama lon} = His birthday is May 12th
+	
+	\emph{tenpo mun luka en tenpo suno wan tu la ona li kama lon}
+
+	\tpf{tenpo mun luka en tenpo suno wan tu la ona li kama lon}
+	
+\end{document} 
