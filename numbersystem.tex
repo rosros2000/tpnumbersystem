@@ -15,7 +15,7 @@
 \usepackage{xcolor}
 \usepackage{setspace}
 %\usepackage[italian]{babel}
-\usepackage[left=1.0in,top=0in,bottom=0.6in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
+\usepackage[left=1.0in,top=-0.2in,bottom=0.6in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
 
 %\newfontface\tpf{linjapona49}
 
@@ -32,7 +32,7 @@
 
 \newcommand\HHUGE{\@setfontsize\Huge{50}{60}} \makeatother 
 
-\title{Power-based number system for toki pona \\{\HHUGE{\tpf{ nasin nanpa sewi1 pi toki-pona}}} \\ V 0.16 $\alpha$}
+\title{Power-based number system for toki pona \\{\HHUGE{\tpf{ nasin nanpa sewi1 pi toki-pona}}} \\ V 0.18 $\alpha$}
 \author{\textit{jan loje, jan Tamalu}} 
 
 \begin{document} 
@@ -40,16 +40,16 @@
 	
 \maketitle
 
-\setstretch{1.2}	
+\setstretch{1.3}	
 
 \section{Toki pona power-based number system}
 	
 \emph{With the help of jan Tamalu}
 \emph{(mistakes are mine only)}
 
-This system should be:
+This system should be as far as possible:
 
-1. based on the common decimal system and digits,
+1. based on the common positional-digit decimal system,
 
 2. unambiguous,
 
@@ -130,20 +130,22 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 	\vspace{5 pt}
 	
-	Ex. 1:
-	
 	\textit{ona li nanpa luka} = it's the 5th (ordinal)
 	
 	\textit{ona li mute luka} = it's 5 (cardinal) 
 	
 	
-\subsection{Non-additive numbers}
+\subsection{Positional digits}
 	
-	\textbf{Numbers are \emph{non-additive}}.
+	\textbf{The values of digits are \emph{positional} (common usage)}
+
+	\vspace{5 pt}
+		
+    That is 212 = 2 × 10\textsuperscript{2} + 1 × 10\textsuperscript{1} + 2 × 10\textsuperscript{0}
 	
 	\vspace{5 pt}
 	
-	120 = \emph{wan tu ala}
+	12 = \emph{wan tu}
 	
 	2024 = \emph{tu ala tu lipu}
 	
@@ -163,9 +165,9 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 \vspace {12 pt}
 	
-	Ex. 2: \emph{jan li jo e \$1,000,000,000}
+	\emph{jan li jo e \$1,000,000,000}
 	
-	\emph{jan li jo e mani Mewika pi mute sewi suli}
+	\emph{\textbf{reading:} jan li jo e mani Mewika pi mute sewi suli}
 	
 \subsection{Very large (or small) numbers}
 
@@ -205,6 +207,8 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	\subsection{Numbers with negative exponents}
 	
 	\textbf{Negative exponents are prefixed by \textit{weka}.}
+
+		\vspace{5pt}
 	
 	6.62 × 10\textsuperscript{-34} = \emph{pipi sike pipi tu sewi weka sin
 		lipu}
@@ -217,10 +221,35 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	2024-05-12 = \emph{tenpo sike tu ala tu lipu en tenpo mun luka en tenpo
 		suno wan tu}
 	
-	Ex. 3: \emph{05-12 ona li kama lon} = His birthday is May 12th
+	\vspace{5pt}
 	
-	\emph{tenpo mun luka en tenpo suno wan tu la ona li kama lon}
+	
+	\emph{05-12 ona li kama lon} = His birthday is May 12th
+	
+	\vspace{5pt}
+	
+	\emph{\textbf{reading:} tenpo mun luka en tenpo suno wan tu la ona li kama lon}
 
-	\huge{\tpf{tenpo mun luka en tenpo suno wan tu la ona li kama lon}}
+	\vspace{5pt}
+	
+	{\huge{\tpf{tenpo mun 5 en tenpo suno 1 2 la ona li kama lon}}}
+	
+	
+	\subsection{Conflict with the current system}
+
+\vspace{5pt}
+
+
+In other to reduce the conflict with the current system, the numbers could be written with the usual digits (0-9), i.e. not "spelled-out" in Toki Pona
+
+	\vspace{5pt}
+
+Ex. 3: \emph{04-3 ona li kama lon} = His birthday is April 3rd
+
+\emph{\textbf{reading}: tenpo mun lipu en tenpo suno sin la ona li kama lon}
+
+\huge{\tpf{tenpo mun 4 en tenpo suno 3 la ona li kama lon}}
+	
+	
 	
 \end{document} 
