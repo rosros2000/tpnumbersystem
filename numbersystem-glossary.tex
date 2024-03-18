@@ -1,0 +1,249 @@
+% !TeX encoding = UTF-8
+% !TeX TS-program = xelatex
+% !TeX root = numbersystem-glossary.tex
+% 20240304 Monday
+% A chart of all the glyphs in Toki Pona, arranged by shape.
+% Process this with 'lualatex'.
+% aquatiki fork - expanded
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{hanging}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fix-cm}    
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage[left=1.0in,top=0in,bottom=0.8in]{geometry}
+\titlespacing*{\section}{0pt}{0.3cm}{0.0cm}
+%\newfontface\tpf{linjapona49}
+\newfontface\tpf{linja sike 5}
+\newcommand*\tpGlyph[2]{
+	\begin{tabular}{c}\Huge{\tpf #1} \\ \small #2 \vspace{2mm}\end{tabular}}
+
+\makeatletter
+\newcommand\HHUGE{\@setfontsize\Huge{40}{50}}
+\makeatother  
+
+\pagestyle{myheadings}
+\markboth{}{\Huge{\tpf lipu-nimi pi nasin nanpa sewi1}}
+
+\title{Power-based number system glossary \\[1ex]{\HHUGE{\tpf lipu-nimi pi nasin nanpa sewi1}} \\ V 0.01 $\alpha$} 
+\author{\textit{jan loje}}
+
+\begin{document}
+\maketitle
+
+\newcommand\tpDef[4]{\textbf{#1} {\Large\tpf #2} \textit{#3}: #4}
+
+
+\newcommand\tpDefB[3]{\textbf{#1} {\Large\tpf #2}: \textit{#3}}
+
+\setlength{\parskip}{0.3em}
+
+cf. = compare
+
+|| = example(s)
+
+$\sim$ = entry word or phrase
+
+abbrev. = abbreviated form to be interpreted according to context
+
+
+\begin{multicols}{2}
+\raggedright
+\begin{hangparas}{1cm}{1}
+
+\section*{NUMBERS AND SYMBOLS}
+
+\tpDef {0}{ala}{ala}{zero}
+
+\tpDef {1st}{nanpa wan}{nanpa wan}{first}
+
+\tpDef {1}{wan}{wan}{one}
+
+\tpDef {2}{tu}{tu}{two}
+
+\tpDef {3}{sin}{sin}{three}
+
+\tpDef {4}{lipu}{lipu}{four}
+
+\tpDef {5}{luka}{luka}{five}
+
+\tpDef {6}{pipi}{pipi}{six}
+
+\tpDef {7}{len}{len}{seven}
+
+\tpDef {8}{musi}{musi}{eight}
+
+\tpDef {9}{suli}{suli}{nine}
+
+\tpDef {10}{sewi1}{sewi}{ten, 10 base for powers || 10\textsuperscript{2} = $\sim$ \textit{tu}: 100;  10\textsuperscript{6}= $\sim$ \textit{pipi}: 1 million; 10\textsuperscript{10\textsuperscript{2}} = $\sim$ $\sim$ \textit{tu}: a googol }
+
+\tpDef {add}{en}{en}{(additive use of numbers || 1003:\textit{ sewi sin en sin}}
+
+\tpDef {negative}{weka}{weka}{-, sign of negative number; ||  6.62 x 10\textsuperscript{-34}: \textit{pipi sike pipi tu sewa weka sin lipu} }
+
+\tpDef {cardinal}{mute}{mute}{(cardinal use of numbers) || \textit{ona li mute luka} = it's 5}
+
+\tpDef {ordinal}{nanpa}{nanpa}{(ordinal use of numbers) || \textit{ona li nanpa luka} = it's the 5th}
+
+\tpDef {hundred}{10\textsuperscript{2}}{sewi tu}{100}
+
+\tpDef {million}{10\textsuperscript{6}}{sewi pipi}{1,000,000}
+
+\tpDef {crore}{10\textsuperscript{7}}{sewi len}{10,000,000}
+
+\tpDef {billion}{10\textsuperscript{9}}{sewi suli}{1,000,000,000 || \textit{jan li jo \\* e mani Mewika pi mute sewi suli}: he owns  \\* \$1,000,000,000}
+
+\tpDef {googol}{10\textsuperscript{10\textsuperscript{2}}}{sewi sewi tu}{10\textsuperscript{100}}
+
+\section*{DATES AND TIMES}
+\vspace{5mm}
+
+\subsection*{YEARS}
+
+\vspace{5mm}
+
+\tpDef {year}{tenpo sike, sike suno}{tenpo sike, sike suno}{time of one complete revolution of the planet earth around the sun}
+
+\tpDef {century}{tenpo sike sewi1 tu, sike suno sewi1 tu}{tenpo sike sewi tu, sike suno sewi tu}{time of 100 complete revolutions of the planet earth around the sun}
+
+\tpDef {millenium}{tenpo sike sewi1 sin, sike suno sewi1 sin}{tenpo sike sewi sin, sike suno sewi sin}{time of 1000 complete revolutions of the planet earth around the sun}
+
+\tpDef {megayear}{tenpo sike sewi1 pipi, sike suno sewi1 pipi}{tenpo sike sewi pipi, sike suno sewi pipi}{time of 1,000,000 complete revolutions of the planet earth around the sun}
+
+\tpDef {eon}{tenpo sike sewi1 suli, sike suno sewi1 suli}{tenpo sike sewi suli, sike suno sewi suli}{time of 1,000,000,000 complete revolutions of the planet earth around the sun}
+
+\tpDef {2024-05-12}{2024-05-12}{tenpo sike tu ala tu lipu en tenpo mun luka en tenpo }{May 12th, 2024 [ISO 8601]}
+
+\end{hangparas}
+\end{multicols}
+
+\newpage
+\newgeometry{left=0.6in,right=0.25in,top=1in,bottom=0.55in}
+
+\begin{multicols}{2}
+	\raggedright
+	\begin{hangparas}{1cm}{1}
+
+\subsection*{MONTHS}
+
+\tpDef {month}{tenpo mun}{tenpo mun}{one of the 12 subdivisions of the year}
+
+\tpDef {quarter}{tenpo mun mute sin}{tenpo mun mute sin}{one of the subdivisions of the year in 4 parts (3 months) cf. \textit{tenpo mun sin}: March}
+
+\tpDef {first quarter}{tenpo mun mute sin nanpa wan}{tenpo mun mute sin nanpa wan}{January-February-March}
+
+\tpDef {January}{tenpo mun wan}{tenpo mun wan}{1st month of the year}
+
+\tpDef {February}{tenpo mun tu}{tenpo mun tu}{2nd month of the year}
+
+\tpDef {March}{tenpo mun sin}{tenpo mun sin}{3rd month of the year}
+
+\tpDef {April}{tenpo mun lipu}{tenpo mun lipu}{4th month of the year}
+
+\tpDef {May}{tenpo mun luka}{tenpo mun luka}{5th month of the year}
+
+\tpDef {June}{tenpo mun pipi}{tenpo mun pipi}{6th month of the year}
+
+\tpDef {July}{tenpo mun len}{tenpo mun len}{7th month of the year}
+
+\tpDef {August}{tenpo mun musi}{tenpo mun musi}{8th month of the year}
+
+\tpDef {September}{tenpo mun suli}{tenpo mun suli}{9th month of the year}
+
+\tpDef {October}{tenpo mun sewi1}{tenpo mun sewi}{10th month of the year}
+
+\tpDef {November}{tenpo mun wan wan}{tenpo mun wan wan}{11th month of the year}
+
+\tpDef {December}{tenpo mun wan tu}{tenpo mun wan tu}{12th month of the year}
+
+\subsection*{WEEK AND WEEKDAYS}
+
+\tpDef {week}{tenpo esun, sike esun}{tenpo esun, sike esun}{seven solar days}
+
+\tpDef {Monday}{tenpo suno nanpa wan, tenpo suno pi mun}{tenpo suno nanpa wan, tenpo suno pi mun}{the first [ISO-8601] day of the week; cf. \textit{tenpo suno wan pi tempo sike}: new year's, the first day of the year; \textit{tenpo suno mute wan}: [a period of] one day, 24 hours }
+
+\tpDef {Tuesday}{tenpo suno nanpa tu, tenpo suno seli}{tenpo suno nanpa tu, tenpo suno seli}{the second [ISO-8601] day of the week }
+
+\tpDef {Wednesday}{tenpo suno nanpa sin, tenpo suno telo }{tenpo suno nanpa sin, tenpo suno telo }{the third [ISO-8601] day of the week }
+
+\tpDef {Thursday}{tenpo suno nanpa lipu, tenpo suno kasi}{tenpo suno nanpa lipu, tenpo suno kasi}{the fourth [ISO-8601] day of the week }
+
+\tpDef {Friday}{tenpo suno nanpa luka, tenpo suno kiwen}{tenpo suno nanpa luka, tenpo suno kiwen}{the fifth [ISO-8601] day of the week }
+
+\tpDef {Saturday}{tenpo suno nanpa pipi, tenpo suno ma}{tenpo suno nanpa pipi, tenpo suno ma}{the sixth [ISO-8601] day of the week }
+
+\tpDef {Sunday}{tenpo suno nanpa len, tenpo suno pi suno, tenpo esun suno}{tenpo suno nanpa len, tenpo suno pi suno, tenpo esun suno}{the seventh [ISO-8601] day of the week}
+
+\subsection*{DAYS}
+
+\tpDef {day}{tenpo suno}{tenpo suno}{solar day, 24 hours | ALT time from sunrise to sunset (according to context)}
+
+
+\tpDef {night}{tenpo pimeja, tenpo lape, tenpo mun}{tenpo pimeja, tenpo lape, tenpo mun}{time from sunset to sunrise}
+
+\tpDef {sunset}{pini suno, weka suno}{pini suno, weka suno}{time of day when the sun disappears below the western horizon}
+
+\tpDef {sunrise}{kama suno, open suno, sewi1 suno}{kama suno, open suno, sewi suno}{time of day when the sun appears above the eastern horizon}
+
+\tpDef {today}{tenpo suno lon, tenpo suno ni, tenpo ni}{tenpo suno lon, tenpo suno ni, (abbrev.) tenpo ni}{current solar day}
+
+\tpDef {tomorrow}{tenpo suno kama}{tenpo suno kama}{next solar day after the current day}
+
+\tpDef {yesterday}{tenpo suno pini}{tenpo suno pini}{previous solar day before the current day}
+
+\tpDef {day after tomorrow}{tenpo suno pi kama tu}{tenpo suno pi kama tu}{second next solar day after the current day}
+
+\tpDef {day before yesterday}{tenpo suno pi pini tu}{tenpo suno pi pini tu}{second previous solar day before the current day}
+
+\tpDef {new year's (day)}{tenpo suno wan pi tenpo sike}{tenpo suno wan pi tenpo sike}{new year's, the first day of the year}
+
+
+\subsection*{HOURS}
+
+\tpDef {hour}{tenpo pi palisa lili}{tempo pi palisa lili}{1/24 of a day}
+
+\tpDef {minute}{tenpo pi palisa suli}{tempo pi palisa suli}{1/60 of an hour}
+
+\tpDef {second}{tenpo pi palisa tawa}{tempo pi palisa tawa}{1/60 of a minute}
+
+\tpDef {noon}{tenpo suno wawa}{tenpo suno wawa}{12:00 || \textit{tempo ni li suno wawa}: it's 12 o'clock}
+
+\tpDef {midnight}{tenpo pimeja wawa}{tenpo pimeja wawa}{24:00}
+
+\tpDef {15:20}{15:20} {20 minutes past 3 o'clock P.M.}{3:20 P.M. ||\textit{ o mi kama lon poka lon tenpo wan luka en tu ale}: let's meet at 15:20}
+
+\subsection*{OTHERS}
+
+\tpDef {summer}{tenpo seli}{tenpo seli}{the warmest season of the year}
+
+\tpDef {winter}{tenpo lete}{tenpo lete}{the coldest season of the year}
+
+\tpDef {spring}{tenpo pi seli lili}{tenpo pi seli lili}{the season of the year between winter and summer}
+
+\tpDef {autumn}{tenpo loje, tenpo loje jelo, tenpo pi lete lili}{tenpo loje, tenpo loje jelo, tenpo pi lete lili}{the season of the year between summer and winter}
+
+\tpDef {fortnight}{tenpo suno mute sewi1 en lipu}{tenpo suno mute sewi en lipu}{period of 14 days}
+
+\tpDef {now}{tenpo ni}{tempo ni}{at the present time or moment}
+
+\tpDef {before}{tenpo ni}{tempo ni}{at the present time or moment}
+
+\tpDef {after}{tenpo kama}{tempo kama}{in a future time or moment}
+
+\tpDef {soon}{tenpo kama lili}{tempo kama lili}{within a short time, or quickly}
+
+\tpDef {never}{tenpo ala}{tempo ala}{at no time, in no way}
+
+%\tpDef {Christmas}{tenpo [\_sin\_alasa\_noka\_tan\_awen]}{tenpo Santa}{24:00}
+
+%-----------------
+
+\end{hangparas}
+\end{multicols} 
+
+
+\end{document}
