@@ -5,7 +5,7 @@ The font used to generate the pdf file from the LaTeX source is _linja sike_
 
 Versions: 
 
-numbersystem: 0.21 alpha
+numbersystem: 0.22 alpha
 
-numbersystem-glossary: 0.01 alpha
+numbersystem-glossary: 0.02 alpha
 
