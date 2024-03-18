@@ -1,1 +1,1 @@
-Add more examples in a separate document
+Add more examples in a separate document: done "nubersystem-glossary.tex"
