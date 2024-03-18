@@ -7,5 +7,5 @@ Versions:
 
 numbersystem: 0.22 alpha
 
-numbersystem-glossary: 0.06 alpha
+numbersystem-glossary: 0.08 alpha
 
