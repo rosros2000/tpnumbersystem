@@ -17,13 +17,15 @@
 \usepackage{xcolor}
 \usepackage{setspace}
 %\usepackage[italian]{babel}
-\usepackage[left=1.0in,top=-0.2in,bottom=0.6in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
+\usepackage[left=1.0in,top=-0.2in,bottom=0.9in]{geometry} \titlespacing*{\section}{0pt}{0.3cm}{0.0cm} 
 \usepackage{xeCJK}
 \setCJKmainfont{AR PL UMing TW}
 
 %\newfontface\tpf{linjapona49}
 
 \newfontface\tpf{linja sike 5} 
+
+\newcommand*\sitp[1]{\large{\tpf{#1}}}
 
 \newcommand*\tpGlyph[2]{ 
 	\begin{tabular}{c}\huge{\tpf #1} \\ \small #2 
@@ -36,7 +38,7 @@
 
 \newcommand\HHUGE{\@setfontsize\Huge{50}{60}} \makeatother 
 
-\title{Power-based number system \\{\HHUGE{\tpf{ nasin nanpa sewi1}}} \\ V 0.22 $\alpha$}
+\title{Power-based number system \\{\HHUGE{\tpf{nasin nanpa sewi1}}} \\ V 0.24 $\alpha$}
 \author{\textit{jan loje, Shaevor, jan Tamalu}} 
 
 
@@ -46,14 +48,14 @@
 	
 \maketitle
 
-\setstretch{1.3}	
+\setstretch{1.2}	
 
 \section{Power-based number system for toki pona}
 	
 \emph{Written by jan loje with the help of jan Tamalu and Shaevor}
 \emph{(mistakes are mine only)}
 
-This proposal should be:
+This system should be:
 
 1. based on the common positional-digit decimal system,
 
@@ -63,55 +65,57 @@ This proposal should be:
 
 4. suitable for \textit{toki pona}.
 
+NOTES: < >: \textit{read as}
+
 \section{Vocabulary}
 	
-The ideas for the choice of the names are indicated between square 	brackets {[} {]}
+%The ideas for the choice of the numerals are indicated between square brackets {[} {]}
 
 \vspace{10pt}
 	
 	\begin{tabular}{|c|c|c|l|} 
 		\hline
-		1 & wan & \tpf{wan} & one\tabularnewline
+		1 & wan & \sitp{wan} & one\tabularnewline
 		\hline
-		2 & tu & \tpf{tu} & two\tabularnewline
+		2 & tu & \sitp{tu} & two\tabularnewline
 		\hline
-		3 & sin & \tpf{sin} & three {[}3 lines{]}\tabularnewline
+		3 & sin & \sitp{sin} & three {[}3 lines{]}\tabularnewline
 		\hline
-		4 & lipu & \tpf{lipu} & four {[}4 sides{]}\tabularnewline
+		4 & lipu & \sitp{lipu} & four {[}4 sides{]}\tabularnewline
 		\hline
-		5 & luka & \tpf{luka} & five {[}toki pona hand{]}\tabularnewline
+		5 & luka & \sitp{luka} & five {[}toki pona hand{]}\tabularnewline
 		\hline
-		6 & pipi & \tpf{pipi} & six {[}6 elements{]}\tabularnewline
+		6 & pipi & \sitp{pipi} & six {[}6 elements{]}\tabularnewline
 		\hline
-		7 & len & \tpf{len} & seven {[}4 sides + 3 lines{]}\tabularnewline
+		7 & len & \sitp{len} & seven {[}4 sides + 3 lines{]}\tabularnewline
 		\hline
-		8 & musi & \tpf{musi} & eight [two circles look like a kind of
+		8 & musi & \sitp{musi} & eight [two circles look like a kind of
 		8]\tabularnewline
 		\hline
-		9 & suli & \tpf{suli} & nine {[}the "big" digit{]}\tabularnewline
+		9 & suli & \sitp{suli} & nine {[}the "big" digit{]}\tabularnewline
 		\hline
-		10 & sewi & \tpf{sewi1} & 10 (base) followed by integer powers (1 is
+		10 & sewi & \sitp{sewi1} & 10 (base) followed by integer powers (1 is
 		implicit): 2, 3, 4,... {[}raise{]}\tabularnewline
 		\hline
-		20 & tu sewi & \tpf{tu sewi1} & two × ten\tabularnewline
+		20 & tu sewi & \sitp{tu sewi1} & two × ten\tabularnewline
 		\hline
-		30 & sin sewi & \tpf{sin sewi1} & three × ten\tabularnewline
+		30 & sin sewi & \sitp{sin sewi1} & three × ten\tabularnewline
 		\hline
-		100 & sewi tu & \tpf{sewi1 tu} & 10\textsuperscript{2}\tabularnewline
+		100 & sewi tu & \sitp{sewi1 tu} & 10\textsuperscript{2}\tabularnewline
 		\hline
-		300 & sin sewi tu & \tpf{sin sewi1 tu} & three × ten\textsuperscript{2}\tabularnewline
+		300 & sin sewi tu & \sitp{sin sewi1 tu} & three × ten\textsuperscript{2}\tabularnewline
 		\hline
-		1000 & sewi sin & \tpf{sewi1 sin} & 10\textsuperscript{3}\tabularnewline
+		1000 & sewi sin & \sitp{sewi1 sin} & 10\textsuperscript{3}\tabularnewline
 		\hline
-		+ & en & \tpf{en} & addition\tabularnewline
+		+ & en & \sitp{en} & addition\tabularnewline
 		\hline
-		- & weka & \tpf{weka} & negative {[}toki pona subtract{]}\tabularnewline
+		- & weka & \sitp{weka} & negative {[}toki pona subtract{]}\tabularnewline
 		\hline
-		. & sike & \tpf{sike} & separator for decimal part\tabularnewline
+		. & sike & \sitp{sike} & separator for decimal part\tabularnewline
 		\hline
-		№ & nanpa & \tpf{nanpa} & number prefix (ordinal)*\tabularnewline
+		№ & nanpa & \sitp{nanpa} & number prefix (ordinal)*\tabularnewline
 		\hline
-		\# & mute & \tpf{mute} & number prefix (cardinal)\tabularnewline
+		\# & mute & \sitp{mute} & number prefix (cardinal)\tabularnewline
 		\hline
 	\end{tabular}
 
@@ -121,24 +125,26 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 
 \newpage
 
-\newgeometry{left=1.0in,top=1in,bottom=0.6in}
+\newgeometry{left=1.0in,top=1in,bottom=0.9in}
 
 
 \section{Use}
 	
 \subsection{Prefixes (when needed)}
 
-    \textbf{Ordinal and cardinal numbers}.
+    \textbf{Ordinal and cardinal numbers}
+
+	\vspace{3 pt}
 	
-	\textit{nanpa} {\tpf{nanpa}}:  ordinal number
+	\textit{nanpa} {\sitp{nanpa}}:  ordinal number
 	
-	\textit{mute} {\tpf{mute}}: cardinal number
+	\textit{mute} {\sitp{mute}}: cardinal number
 	
 	\vspace{5 pt}
 	
-	\textit{ona li nanpa luka} = it's the 5th (ordinal)
+	{\sitp{ona li nanpa 5}}~<\textit{ona li nanpa luka}> it's the 5th (ordinal)
 	
-	\textit{ona li mute luka} = it's 5 (cardinal) 
+	{\sitp{ona li mute 5}}~<\textit{ona li mute luka}> it's 5 (cardinal) 
 	
 	
 \subsection{Positional digits}
@@ -151,9 +157,9 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 	\vspace{5 pt}
 	
-	12 = \emph{wan tu}
+	12 <\textit{wan tu}>
 	
-	2024 = \emph{tu ala tu lipu}
+	2024 <\textit{tu ala tu lipu}>
 	
 \subsection{Numbers as powers of 10}
     
@@ -161,9 +167,9 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
     
     \vspace{5 pt}
 	
-	1000 = 10\textsuperscript{3}= \emph{sewi sin}
+	1000 = 10\textsuperscript{3} <\emph{sewi sin}>
 	
-	10 000 = 10\textsuperscript{4}= \emph{sewi lipu}
+	10 000 = 10\textsuperscript{4} <\emph{sewi lipu}>
 	
 	...
 	
@@ -171,9 +177,7 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 \vspace {12 pt}
 	
-	\emph{jan li jo e \$1,000,000,000}
-	
-	\emph{\textbf{reading:} jan li jo e mani Mewika pi mute sewi suli}
+	{\sitp{jan li jo e \$1,000,000,000}}~<\textit{jan li jo e mani Mewika pi mute sewi suli}>
 	
 \subsection{Very large (or small) numbers}
 
@@ -181,11 +185,7 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
     
     \vspace {6 pt}
 	
-	a googol = 10\textsuperscript{100} = sewi wan ala ala 
-	
-	or 
-	
-	10\textsuperscript{10\textsuperscript{2}} = sewi sewi tu
+	a googol = 10\textsuperscript{100} \textit{<sewi wan ala ala>} \textit{or} 10\textsuperscript{10\textsuperscript{2}} <\textit{sewi sewi tu}>
 	
 	\subsection{Composed numbers}
 	
@@ -199,10 +199,9 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 	The additive value of a number (sequence) is stated explicitly with
 	\emph{en}.
-   \vspace {6 pt}
+     \vspace {6 pt}
    	
-	4 000 000 012 = 4 × 10\textsuperscript{9}+ 12 = \emph{lipu sewi suli en
-		wan tu}
+	4 000 000 012 = 4 × 10\textsuperscript{9}+ 12  <\emph{lipu sewi suli en	wan tu}>
 	
 	\subsection{Numbers with fractional parts}
 	
@@ -210,11 +209,11 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 	
 		\vspace{5pt}
 		
-	3.14 = \emph{sin sike wan lipu}
+	3.14 <\emph{sin sike wan lipu}>
 	
 		\vspace{5pt}
 		
-	3.14 = 314 × 10\textsuperscript{-2} = \emph{sin wan lipu sewi weka tu}
+	3.14 = 314 × 10\textsuperscript{-2} <\emph{sin wan lipu sewi weka tu}>
 	
 	\subsection{Numbers with negative exponents}
 	
@@ -222,29 +221,20 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 
 		\vspace{5pt}
 	
-	6.62 × 10\textsuperscript{-34} = \emph{pipi sike pipi tu sewi weka sin
-		lipu}
+	6.62 × 10\textsuperscript{-34} <\emph{pipi sike pipi tu sewi weka sin lipu}>
 	
 	\subsection{Dates}
 	
 	\textbf{ISO 8601 system}
 	\vspace{5pt}
 	
-	2024-05-12 = \emph{tenpo sike tu ala tu lipu en tenpo mun luka en tenpo
-		suno wan tu}
+	{\sitp{2024-05-12}}~<\emph{tenpo sike tu ala tu lipu \textbf{en} tenpo mun luka \textbf{en} tenpo suno wan tu}>
 	
 	\vspace{5pt}
 	
-	
-	\emph{5-12 ona li kama lon} = His birthday is May 12th
+	{\sitp{5-12 la ona li kama lon}}~<\emph{tenpo mun luka en tenpo suno wan tu la ona li kama lon}> His birthday is May 12th
 	
 	\vspace{5pt}
-	
-	\emph{\textbf{reading:} tenpo mun luka en tenpo suno wan tu la ona li kama lon}
-
-	\vspace{5pt}
-	
-	{\huge{\tpf{tenpo mun 5 en tenpo suno 1 2 la ona li kama lon}}}
 	
 	
 	\subsection{Conflict with other number systems}
@@ -252,18 +242,7 @@ The ideas for the choice of the names are indicated between square 	brackets {[}
 \vspace{5pt}
 
 
-In other to reduce the conflict with other toki-pona number systems, the numbers could be written with the usual digits (0-9), i.e. not "spelled-out":
+In other to reduce the conflict with other toki-pona number systems, the numbers could be written with the usual digits (0-9), i.e. not using toki pona numerals.
 
-	\vspace{5pt}
-
-Ex. 3: \emph{4-3 ona li kama lon} = His birthday is April 3rd
-
-	\vspace{5pt}
-
-\emph{\textbf{reading}: tenpo mun lipu en tenpo suno sin la ona li kama lon}
-
-\huge{\tpf{tenpo mun 4 en tenpo suno 3 la ona li kama lon}}
-	
-	
 	
 \end{document} 
